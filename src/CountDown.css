@@ -1,0 +1,76 @@
+.countdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 10px solid #3498db;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .timer > div {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  label {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+  }
+  
+   .hours__input,.minutes__input,.seconds__input {
+    align-self: center;
+    text-align: center;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    width: 80px;
+    height: 60px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-field input:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttons button:hover {
+    background-color: #2980b9;
+  }
+  
+  
