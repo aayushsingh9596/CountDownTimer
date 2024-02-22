@@ -1,4 +1,4 @@
-.countdown {
+   .countdown {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,16 +8,19 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #f0f0f0;
-    width: 600px;
-    height: 600px;
+    width: 80vw;
+    max-width: 500px;
+    height: 80vh;
+    max-height: 500px; 
     border-radius: 50%;
-    border: 10px solid #3498db;
+    border: 2vw solid #3498db;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   }
   
   .timer {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
   }
   
   .timer > div {
@@ -30,16 +33,19 @@
   
   label {
     font-family: Arial, sans-serif;
-    font-size: 24px;
+    font-size: 1rem;
   }
   
-   .hours__input,.minutes__input,.seconds__input {
+  .hours__input,
+  .minutes__input,
+  .seconds__input {
     align-self: center;
     text-align: center;
-    font-size: 24px;
+    font-size: 2rem;
     font-family: Arial, sans-serif;
-    width: 80px;
-    height: 60px;
+    width: 10vw;
+    max-width: 100px;
+    height: 5vh;
     border: 2px solid #ccc;
     border-radius: 5px;
     transition: border-color 0.3s ease;
@@ -53,13 +59,14 @@
   .buttons {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 5vh;
+    width: 50vw;
   }
   
   .buttons button {
     margin: 0 10px;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: Arial, sans-serif;
     color: #fff;
     background-color: #3498db;
@@ -73,4 +80,27 @@
     background-color: #2980b9;
   }
   
+  @media (max-width: 600px) {
+    .countdown {
+      width: 80vw;
+      height: 80vh;
+      border-width: 4vw;
+    }
+  
+    .hours__input,
+    .minutes__input,
+    .seconds__input {
+      width: 30vw;
+      max-width: 80px;
+    }
+  
+    .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 20vw;
+      height: 5vh;
+      flex-wrap: wrap;
+    }
+  }
   
